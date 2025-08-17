@@ -67,8 +67,9 @@ library
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
 
-    -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.17.2.1
+        -- Other library packages from which modules are imported.
+    build-depends:    base ^>=4.17.2.1,
+                      random
 
     -- Directories containing source files.
     hs-source-dirs:   src
@@ -125,4 +126,5 @@ test-suite snakeGame-test
     -- Test dependencies.
     build-depends:
         base ^>=4.17.2.1,
-        snakeGame
+        snakeGame,
+        random
