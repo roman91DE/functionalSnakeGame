@@ -28,6 +28,8 @@ data Board = Board
   }
   deriving (Show, Eq)
 
+
+
 snakeAlive :: Board -> Snake -> Bool
 snakeAlive board snake = not (hitWall || bitItSelf)
   where

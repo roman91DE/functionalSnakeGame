@@ -69,7 +69,9 @@ library
 
         -- Other library packages from which modules are imported.
     build-depends:    base ^>=4.17.2.1,
-                      random
+                      random,
+                      ansi-terminal,
+                      unix
 
     -- Directories containing source files.
     hs-source-dirs:   src
@@ -93,7 +95,10 @@ executable snakeGame
     -- Other library packages from which modules are imported.
     build-depends:
         base ^>=4.17.2.1,
-        snakeGame
+        snakeGame,
+        random,
+        ansi-terminal,
+        unix
 
     -- Directories containing source files.
     hs-source-dirs:   app
